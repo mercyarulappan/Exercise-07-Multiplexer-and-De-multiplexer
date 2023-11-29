@@ -4,10 +4,10 @@
 ### SOFTWARE REQUIRED:   Quartus prime
 ### THEORY 
 
-## What are Multiplexer and Demultiplexer?
+### What are Multiplexer and Demultiplexer?
 In-network transmission, both the multiplexer and demultiplexer are combinational circuits. A multiplexer selects an input from several inputs then it is transmitted in the form of a single line. An alternative name of the multiplexer is MUX or data selector. A demultiplexer uses one input signal and generates many. So it is known as Demux or data distributor.
 
-## What is a Multiplexer?
+### What is a Multiplexer?
 The multiplexer is a device that has multiple inputs and single line output. The select lines determine which input is connected to the output, and also increase the amount of data that can be sent over a network within a certain time. It is also called a data selector.
 
 The single-pole multi-position switch is a simple example of a non-electronic circuit of the multiplexer, and it is widely used in many electronic circuits. The multiplexer is used to perform high-speed switching and is constructed by electronic components.
@@ -26,7 +26,7 @@ Figure2 4X1 multiplexer
 If the control input is changed to 11, then all gates are restricted except the bottom AND gate. In this case, D3 is transmitted to the output, and q=D0. If the control input is changed to AB =11, all gates are disabled except the bottom AND gate. In this case, D3 is transmitted to the output, and q = D3. The best example of a 4X1 multiplexer is IC 74153. In this IC, the o/p is the same as the i/p. Another example of a 4X1 multiplexer is IC 45352. In this IC, the o/p is the compliment of the i/p
 
 
-## What is Demultiplexer?
+# What is Demultiplexer?
 De-multiplexer is also a device with one input and multiple output lines. It is used to send a signal to one of the many devices. The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does.
 ![image](https://user-images.githubusercontent.com/36288975/170912606-a30e4b74-1726-4430-b245-2c3c3d9c232d.png)
 Figure 3 De-multiplexer 
@@ -46,43 +46,79 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 
  
  
-### Procedure
-/* write all the steps invloved */
+# Procedure
+
+STEP 1:
+Start the module using module projname().
+
+STEP 2:
+Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
+
+STEP 3:
+Use wire to assign intermediate outputs.
+
+STEP 4:
+Use and,or and not gates to get the desired output.
+
+STEP 5:
+End the module.
+
+STEP 6:
+Generate RTL realization and timing diagrams.
 
 
 
-### PROGRAM 
+# PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+
+
+Developed by: MERCY A
+
+RegisterNumber:  23012506
 */
 
+### Multiplexer:
+
+![mul code](https://github.com/mercyarulappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/149233730/84b3c6ef-5ad5-4fe5-a1cf-5c231553a3ba)
+
+### Demultiplexer:
+
+![Screenshot 2023-11-29 182516](https://github.com/mercyarulappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/149233730/1b9627dc-08a3-4763-adea-53f156f9d2fd)
 
 
+#  LOGIC  DIAGRAM:
+
+### Multiplexer:
+
+![mul diagram](https://github.com/mercyarulappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/149233730/50e805d1-3402-43be-9f30-7b1b9f3dacfb)
+
+### Demultiplexer:
+
+![Screenshot (72)](https://github.com/mercyarulappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/149233730/d9f8d052-5eb4-4f3e-85f6-4c20c52a5c59)
 
 
+# TRUTH TABLE:  
 
-### RTL LOGIC  
+### Multiplexer:
 
+![image](https://github.com/mercyarulappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/149233730/cec03ac1-33b1-4569-8de2-77fd34eb6eef)
 
+### Demultiplexer:
 
+![image](https://github.com/mercyarulappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/149233730/51646347-5036-4aa1-af57-9cfe2320fd26)
 
+# TIMING DIAGRAMS:
 
+### Multiplexer:
 
+![mul wave](https://github.com/mercyarulappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/149233730/e00d1eac-494a-4f08-a636-500e98137246)
 
+### Demultiplexer:
 
-### TIMING DIGRAMS  
-
-
-
-
-
-### TRUTH TABLE 
-
-
-
-
+![Screenshot (71)](https://github.com/mercyarulappan/Exercise-07-Multiplexer-and-De-multiplexer/assets/149233730/08fb6b5f-c0dd-41da-8b99-baf79ce21fc2)
 
 
-### RESULTS 
+### RESULTS:
+
+Thus the implementation of Multiplexer and Demultiplexer are verified.
